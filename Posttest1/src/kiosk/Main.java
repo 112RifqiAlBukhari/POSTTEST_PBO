@@ -13,7 +13,7 @@ public class Main {
             System.out.println("\n--- KIOSK SELF-SERVICE ---");
             System.out.println("1. Tambah Pesanan (Create)");
             System.out.println("2. Lihat Semua Pesanan (Read)");
-            System.out.println("3. Ubah Jumlah Pesanan (Update)");
+            System.out.println("3. Edit Jumlah Pesanan (Update)");
             System.out.println("4. Batalkan Pesanan (Delete)");
             System.out.println("5. Keluar");
             System.out.print("Pilih Menu [1-5]: ");
@@ -79,7 +79,7 @@ public class Main {
                     }
                     break;
                 case 3: // UPDATE
-                    System.out.print("Masukkan Nama Pelanggan yang ingin diubah: ");
+                    System.out.print("Masukkan Nama Pelanggan yang ingin diedit: ");
                     String cariNama = input.nextLine();
 
                     ArrayList<pesanan> milikPelanggan = new ArrayList<>();
@@ -92,9 +92,9 @@ public class Main {
                     if (milikPelanggan.isEmpty()) {
                         System.out.println("Maaf, pesanan atas nama '" + cariNama + "' tidak ditemukan.");
                     } else {
-                        System.out.println("\nData ditemukan! Apa yang ingin Anda ubah?");
-                        System.out.println("1. Ubah Makanan");
-                        System.out.println("2. Ubah Minuman (Jika ada)");
+                        System.out.println("\nData ditemukan! Apa yang ingin Anda edit?");
+                        System.out.println("1. Edit Makanan");
+                        System.out.println("2. Edit Minuman (Jika ada)");
                         System.out.print("Pilih [1-2]: ");
                         int pilihanEdit = input.nextInt();
                         input.nextLine();
