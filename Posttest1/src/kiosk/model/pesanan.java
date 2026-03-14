@@ -1,4 +1,4 @@
-package kiosk;
+package kiosk.model;
 
 public class pesanan {
     private String namaPelanggan;
